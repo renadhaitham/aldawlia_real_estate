@@ -1,0 +1,22 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "aldawlia-real-estate",
+          "appId": "1:499897107865:android:33db26700398a5cce43f08",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "aldawlia-real-estate",
+          "configurations": {
+            "android": "1:499897107865:android:33db26700398a5cce43f08",
+            "ios": "1:499897107865:ios:9806728552d33e87e43f08"
+          }
+        }
+      }
+    }
+  }
+}
