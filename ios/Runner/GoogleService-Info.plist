@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>499897107865-l2bocfs5q4c758qql0ftel78k8hh0lnc.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.499897107865-l2bocfs5q4c758qql0ftel78k8hh0lnc</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>499897107865-te62pigvn69li9o9e76gn3c9u21nl4dd.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAfIcNXi9x_enfHomLMT3TD43KCy9P2qtA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>499897107865</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.aldawliaRealEstate</string>
+	<key>PROJECT_ID</key>
+	<string>aldawlia-real-estate</string>
+	<key>STORAGE_BUCKET</key>
+	<string>aldawlia-real-estate.firebasestorage.app</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:499897107865:ios:9806728552d33e87e43f08</string>
+</dict>
+</plist>
