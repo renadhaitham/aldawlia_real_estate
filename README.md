@@ -1,7 +1,5 @@
 # aldawlia_real_estate
-
-A new Flutter project.
-
+A Flutter-based real estate mobile application that allows users to manage properties, generate QR codes, and submit service requests with Firebase integration.
 ## Getting Started
 
 This project is a starting point for a Flutter application.
