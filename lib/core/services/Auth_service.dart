@@ -46,41 +46,54 @@ class AuthProvider with ChangeNotifier {
         return userCredential;
       }
     } catch (e) {
-      throw Exception("Sign Up Failed: $e");
+      throw Exception("Sign Up Failed: ${e.toString()}");
     }
     return null;
   }
 
   Future<void> signIn(String email, String password) async {
-    await _auth.signInWithEmailAndPassword(email: email.trim(), password: password.trim());
-    notifyListeners();
+    try {
+      await _auth.signInWithEmailAndPassword(email: email.trim(), password: password.trim());
+      notifyListeners();
+    } catch (e) {
+      throw Exception("Sign In Failed: ${e.toString()}");
+    }
   }
 
   Future<void> signOut() async {
-    await _auth.signOut();
-    await GoogleSignIn().signOut();
-    notifyListeners();
+    try {
+      await _auth.signOut();
+      await GoogleSignIn().signOut();
+      notifyListeners();
+    } catch (e) {
+      print("Sign Out Error: $e");
+    }
   }
 
-  Future<void> signInWithGoogle() async {
+  Future<UserCredential?> signInWithGoogle() async {
     try {
       final GoogleSignInAccount? googleUser = await GoogleSignIn().signIn();
-      if (googleUser == null) return;
+      if (googleUser == null) return null;
 
       final GoogleSignInAuthentication googleAuth = await googleUser.authentication;
-      final credential = GoogleAuthProvider.credential(
+      final AuthCredential credential = GoogleAuthProvider.credential(
         accessToken: googleAuth.accessToken,
         idToken: googleAuth.idToken,
       );
 
       UserCredential userCredential = await _auth.signInWithCredential(credential);
       User? user = userCredential.user;
+
       if (user != null) {
         await _saveUserToFirestore(user);
-        notifyListeners();
       }
+
+      notifyListeners();
+      return userCredential;
     } catch (e) {
-      throw Exception("Google Sign-In Failed: $e");
+      print("Google Sign-In Failed: $e");
+      throw Exception("Google Sign-In Failed: ${e.toString()}");
     }
   }
+
 }

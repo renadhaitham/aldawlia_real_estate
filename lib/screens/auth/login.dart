@@ -139,7 +139,7 @@ class Login extends StatelessWidget {
                   ),
                   const SizedBox(height: 30),
                   InkWell(
-                    onTap: () => context.read<myAuth.AuthProvider>().signInWithGoogle(),
+                    onTap: () => handleGoogleSignIn(context),
                     child: SizedBox(
                       width: 50,
                       height: 50,
@@ -165,4 +165,18 @@ class Login extends StatelessWidget {
       ),
     );
   }
+  void handleGoogleSignIn(BuildContext context) async {
+    final authProvider = Provider.of<myAuth.AuthProvider>(context, listen: false);
+    UserCredential? userCredential = await authProvider.signInWithGoogle();
+
+    if (userCredential != null) {
+      Navigator.pushReplacementNamed(context, HomePage.routeName);
+    } else {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text("Google login failed")),
+      );
+    }
+  }
+
+
 }

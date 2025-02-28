@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "499897107865-te62pigvn69li9o9e76gn3c9u21nl4dd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.aldawlia_real_estate",
+            "certificate_hash": "9b242226544b805d3c6ef98329db1e469655ae45"
+          }
+        },
+        {
           "client_id": "499897107865-kn5b9dhur1nson17rlqn86nl7fep4qm7.apps.googleusercontent.com",
           "client_type": 3
         }
