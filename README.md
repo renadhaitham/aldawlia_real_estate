@@ -40,6 +40,12 @@ flutter run
 ⚠ **Ensure you add your Firebase configuration files (`google-services.json` for Android & `GoogleService-Info.plist` for iOS).**
 
 ---
+📥 Download the App
+
+You can download the latest release of the app from the link below:
+📲 Download Aldawlia Real Estate APK
+[https://drive.google.com/file/d/1cvN0d0m4gnZyeFICzNE_u4zRZ1JmFiN6/view?usp=drive_link]
+---
 
 ## 🔧 Technologies Used
 - **Flutter** (Dart)
