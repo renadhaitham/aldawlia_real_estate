@@ -131,7 +131,7 @@ class _AddPropertyState extends State<AddProperty> {
                   contentPadding: EdgeInsets.symmetric(horizontal: 12, vertical: 5),
                 ),
                 validator: (value) => value == null ? "Please select a project" : null,
-                dropdownColor: MyThemeData.whiteColor,
+                dropdownColor: MyThemeData.darky,
               ),
               SizedBox(height: 25),
               Center(

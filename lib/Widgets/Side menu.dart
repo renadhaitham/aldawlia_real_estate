@@ -51,7 +51,8 @@ class _NavBarState extends State<NavBar> {
           ListTile(
             leading: Icon(Icons.qr_code, color: MyThemeData.blackColor),
             title: Text('QR Code', style: Theme.of(context).textTheme.bodySmall),
-            trailing: Icon(_qrMenuExpanded ? Icons.expand_less : Icons.expand_more),
+            trailing: Icon(color:MyThemeData.darky ,
+                _qrMenuExpanded ? Icons.expand_less : Icons.expand_more),
             onTap: () {
               setState(() {
                 _qrMenuExpanded = !_qrMenuExpanded;
@@ -83,8 +84,8 @@ class _NavBarState extends State<NavBar> {
               Navigator.pop(context);
               Navigator.pushReplacementNamed(context, ServiceScreen.routeName);
             },
-          ),
-          const Divider(thickness: 0.5),
+          ),SizedBox(height: 20,),
+          const Divider(thickness: 0.5,color:MyThemeData.darky ,),
           ListTile(
             title: Center(child: Text('Log out', style: Theme.of(context).textTheme.bodySmall)),
             onTap: () async {
