@@ -44,7 +44,7 @@ flutter run
 
 You can download the latest release of the app from the link below:
 📲 Download Aldawlia Real Estate APK
-[https://drive.google.com/file/d/1cvN0d0m4gnZyeFICzNE_u4zRZ1JmFiN6/view?usp=drive_link]
+[https://drive.google.com/file/d/1kPef604p1VfQqWMX_t0vRVTCPmvsU2Xx/view?usp=sharing]
 ---
 
 ## 🔧 Technologies Used
