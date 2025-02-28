@@ -1,14 +1,10 @@
-# aldawlia_real_estate
+# Aldawlia real estate
 A Flutter-based real estate mobile application that allows users to manage properties, generate QR codes, and submit service requests with Firebase integration.
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Features
+Authentication (Login, Signup, Forgot Password using Firebase Auth)
+Home Screen (View latest projects, company announcements)
+QR Code Generation (Visitor & Owner QR with sharing option)
+Property Management (View owned properties with details)
+Service Requests (Submit maintenance or service requests)
+Firebase Integration (Auth, Firestore, Storage)
+State Management using Provider
