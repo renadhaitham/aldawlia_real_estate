@@ -27,8 +27,8 @@ Before running the project, ensure you have the following:
 ## 🚀 Installation & Running the App
 ```sh
 # Clone the repository
-git clone https://github.com/renadhaitham/aldawlia_real_estate.git
-cd aldawlia_real_estate
+git clone https://github.com/renadhaitham/real_estate.git
+cd real_estate
 
 # Install dependencies
 flutter pub get
@@ -43,7 +43,7 @@ flutter run
 📥 Download the App
 
 You can download the latest release of the app from the link below:
-📲 Download Aldawlia Real Estate APK
+📲 Download Real Estate APK
 [https://drive.google.com/file/d/1kPef604p1VfQqWMX_t0vRVTCPmvsU2Xx/view?usp=sharing]
 ---
 
