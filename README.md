@@ -1,4 +1,4 @@
-# 🏡 Aldawlia Real Estate App
+# 🏡 Real Estate App
 
 A Flutter-based real estate mobile application that allows users to manage properties, generate QR codes, and submit service requests with Firebase integration.
 
